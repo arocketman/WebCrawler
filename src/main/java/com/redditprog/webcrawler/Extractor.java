@@ -168,8 +168,11 @@ public class Extractor {
 		
 		if (new_map.equals("single")) {
 			destName = this.dir + fileName.substring(fileName.lastIndexOf("/") + 1);
+<<<<<<< HEAD
 			//Checking if the file already exists and if the user wants to overwrite it. If it doesn't, file download will be skipped, but still has to count "+1" or the main loop condition "this.num_pics <= numDownloads" will break!
 			if(!overWriteIfExists(destName)) return numDownloads+1;
+=======
+>>>>>>> upstream/remaing_features
 		} else {
 			destName = this.dir + new_map + File.separator + fileName.substring(fileName.lastIndexOf("/") + 1);
 		}
